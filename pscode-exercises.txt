@@ -15,14 +15,15 @@ print on the screen the sum of those 2 numbers
 // Exercise 2: Check if a Number is Even or Odd
 
 (Your pseudocode here)
-Divide your number by 2.
+Divide your number by 2. (Do not use zero as your number!)
 
 If there a remainder?
 * If Yes, your number is odd.
 * If No, your number is even.
 
+
 // Exercise 3: 
-Write pseudo code that will perform the following.    
+Write pseudo-code that will perform the following.    
 
 a) Read in 5 separate numbers.   
 b) Calculate the average of the five numbers.
@@ -31,34 +32,59 @@ d) Write out the results found from steps b and c with a message describing what
 
 (Your pseudocode here)
 
+
 (A) Read in 5 separate numbers.
 Get 5 separate numbers
-Time is 1
-Ask for a number if Time is 5 or less
-	What's your number? __
-	Save the number to Time
-	If Time is 5 or less, ask again
+n is 1
+Times will hold the numbers
+
+Ask for a number while n is 5 or less
+	"What's your number? __"
+	Save the number to Times(n)
+	Add 1 to n
+	
 
 (B) Calculate the average of the five numbers.
 Sum your five numbers then divide by 5
-Time1 + Time2 + Time3 + Time4 + Time5 = TotalTime
-TotalTime divided by 2 equals AverageOfFiveTimes
+
+n is 1
+TotalTime is 0
+Do this while n is 5 or less
+	TotalTime = TotalTime + Time(n)
+        Add 1 to n
+
+TotalTime divided by 2 equals AverageNumber
 
 (C) Find the smallest (minimum) and largest (maximum) of the five entered numbers.
 Get the minimum
-n = 1
-nMinimum = Number(1)
+----------------
+n is 1
+nMinimum equals Number(1) (the first number from the series above)
 
 Do this while n is 5 or less
-	Is Number(n) less than minimum?
+	Is Number(n) less than nMinimum?
 		If Yes, nMinimum = Number(n)
-	add 1 to n
+	Add 1 to n
 
 The smallest number is nMinimum!
 
+
+Get the maximum
+---------------
+n is 1
+nMaximum is 0
+
+Do this while n is 5 or less
+	Is Number(n) greater than nMaximum?
+		If Yes, nMaximum = Number(n)
+	Add 1 to n
+
+The largest number is nMaximum!
+
 (D)
-StepB is the average of the 5 numbers that were entered.
-StepC compared each number to the others to determine which was the smallest, and then again for which was the largest. 
+StepB is the average of the 5 numbers by summing them together, then dividing by their count of numbers.
+
+StepC compared each number to all the others.  For minimum, where a number was less than the comparison, it was saved as the "minimum."  For maximum, where a number was greater than the comparison, it was saved as the "maximum."
 
 	
  
